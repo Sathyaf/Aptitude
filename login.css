@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: antiquewhite;
+  font-style: normal;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  place-items: center;
+  display: grid;
+}
+
+.student .login {
+  width: 100% auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  margin: 2rem auto;
+  height: auto;
+}
+
+.student .login h1 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.student .login form {
+  font-size: 1.5rem;
+  color: #666;
+  margin: none;
+}
+
+.student .login form .form-group {
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.student form input[type="submit"] {
+  font-size: 20px;
+  margin-top: 15px;
+}
