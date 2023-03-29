@@ -155,6 +155,31 @@ header .navbar ul li a:hover {
   margin-top: 15px;
 }
 
+.studlog .image {
+  flex: 1 1 40rem;
+}
+
+.studlog img {
+  width: 100%;
+}
+
+.studlog .content {
+  flex: 1 1 40rem;
+}
+
+.studlog .content h1 {
+  font-size: 2rem;
+  color: #444;
+  margin: 1rem;
+}
+
+.studlog .content p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 2rem 0;
+  margin: 1rem;
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 55%;

@@ -1,20 +1,21 @@
-var attempt = 3;
+var attempt = 2;
 function validate() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
   var rollno = document.getElementById("rollno").value;
+
   if (email == "sathya@gmail.com" && password == "sathya" && rollno == "53") {
+    window.location.assign("./student.html");
     alert("Login successfully");
     return false;
   } else {
-    attempt--;
-    alert("You have left " + attempt + " attempt;");
     if (attempt == 0) {
-      document.getElementById("email").disabled = true;
-      document.getElementById("password").disabled = true;
-      document.getElementById("rollno").disabled = true;
-      document.getElementById("submit").disabled = true;
-      return false;
+      window.location.assign("./index.html");
+      alert("Invalid information");
+    } else {
+      attempt = attempt - 1;
+      alert("Login Failed Only " + attempt + "attempts available");
     }
+    return false;
   }
 }
